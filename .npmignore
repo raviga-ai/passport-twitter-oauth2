@@ -1,0 +1,6 @@
+example/
+test/
+.github/
+.gitignore
+.npmignore
+*.tgz 

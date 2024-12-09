@@ -1,0 +1,52 @@
+{
+  "name": "passport-twitter-oauth2-ravigaai",
+  "version": "1.0.1",
+  "description": "Twitter OAuth 2.0 authentication strategy for Passport",
+  "main": "lib/index.js",
+  "types": "lib/passport-twitter-oauth2.d.ts",
+  "scripts": {
+    "test": "mocha",
+    "prepublishOnly": "npm test",
+    "version": "npm test"
+  },
+  "keywords": [
+    "passport",
+    "twitter",
+    "oauth2",
+    "auth",
+    "authentication",
+    "identity",
+    "pkce"
+  ],
+  "author": "Pallav Bajjuri",
+  "license": "MIT",
+  "dependencies": {
+    "base64url": "^3.0.1",
+    "passport-oauth2": "^1.8.0"
+  },
+  "peerDependencies": {
+    "passport": "^0.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raviga-ai/passport-twitter-oauth2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/raviga-ai/passport-twitter-oauth2/issues"
+  },
+  "devDependencies": {
+    "mocha": "^9.2.2",
+    "nock": "^13.3.1",
+    "should": "^13.2.3"
+  },
+  "files": [
+    "lib/",
+    "LICENSE",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "homepage": "https://github.com/raviga-ai/passport-twitter-oauth2#readme"
+}
