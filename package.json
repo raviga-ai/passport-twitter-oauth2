@@ -1,6 +1,6 @@
 {
   "name": "passport-twitter-oauth2-ravigaai",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Twitter OAuth 2.0 authentication strategy for Passport",
   "main": "lib/index.js",
   "types": "lib/passport-twitter-oauth2.d.ts",
@@ -39,7 +39,11 @@
   "devDependencies": {
     "mocha": "^9.2.2",
     "nock": "^13.3.1",
-    "should": "^13.2.3"
+    "should": "^13.2.3",
+    "@types/express": "^4.17.21",
+    "@types/passport": "^1.0.16",
+    "@types/express-session": "^1.17.10",
+    "typescript": "^5.3.3"
   },
   "files": [
     "lib/",
