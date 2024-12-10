@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.4] - 2024-12-10
+
+### Changed
+- Integrated Winston for logging.
+- Refactored `userProfile` method to include logging for fetching user profiles.
+- Improved error handling with logging during authentication.
+
 ## [1.0.3] - 2024-12-09
 
 ### Added
@@ -42,6 +49,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - State parameter validation
 - Bearer token authentication for API requests
 
+[1.0.4]: https://github.com/raviga-ai/passport-twitter-oauth2/releases/tag/v1.0.4
 [1.0.3]: https://github.com/raviga-ai/passport-twitter-oauth2/releases/tag/v1.0.3
 [1.0.2]: https://github.com/raviga-ai/passport-twitter-oauth2/releases/tag/v1.0.2
 [1.0.1]: https://github.com/raviga/passport-twitter-oauth2/releases/tag/v1.0.1

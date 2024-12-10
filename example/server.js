@@ -1,6 +1,7 @@
 const express = require('express');
 const passport = require('passport');
 const TwitterStrategy = require('../lib').Strategy;
+const logger = require('../lib/logger');
 
 // API Access link for creating client ID and secret:
 // https://developer.twitter.com/en/portal/dashboard
@@ -28,12 +29,14 @@ passport.use(new TwitterStrategy({
     passReqToCallback: true
   },
   function(req, accessToken, refreshToken, profile, done) {
-    // Store accessToken in session if needed
-    req.session.accessToken = accessToken;
-    
-    process.nextTick(function() {
+    logger.info('User authenticated with Twitter', { profile });
+    try {
+      req.session.accessToken = accessToken;
       return done(null, profile);
-    });
+    } catch (error) {
+      logger.error('Error during authentication', { error });
+      return done(error);
+    }
   }
 ));
 
