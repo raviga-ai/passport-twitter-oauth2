@@ -1,6 +1,6 @@
 {
   "name": "passport-twitter-oauth2-ravigaai",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Twitter OAuth 2.0 authentication strategy for Passport",
   "main": "lib/index.js",
   "types": "lib/passport-twitter-oauth2.d.ts",
