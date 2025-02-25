@@ -1,0 +1,16 @@
+{
+  "name": "passport-twitter-oauth2-example",
+  "version": "1.0.0",
+  "description": "Example implementation of passport-twitter-oauth2-ravigaai",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "passport": "^0.7.0",
+    "passport-twitter-oauth2-ravigaai": "^1.0.5",
+    "dotenv": "^16.3.1"
+  }
+}
