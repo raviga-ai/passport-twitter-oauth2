@@ -1,7 +1,7 @@
 {
   "name": "passport-twitter-oauth2-ravigaai",
-  "version": "1.1.0",
-  "description": "Twitter OAuth 2.0 authentication strategy for Passport with refresh token support",
+  "version": "1.1.1",
+  "description": "Twitter OAuth 2.0 authentication strategy for Passport with refresh token support and enhanced profile data",
   "main": "lib/index.js",
   "types": "lib/passport-twitter-oauth2.d.ts",
   "scripts": {
@@ -17,7 +17,8 @@
     "authentication",
     "identity",
     "pkce",
-    "refresh-token"
+    "refresh-token",
+    "profile"
   ],
   "author": "Pallav Bajjuri",
   "license": "MIT",
