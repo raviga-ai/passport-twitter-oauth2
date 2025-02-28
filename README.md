@@ -5,11 +5,11 @@
 ## Features
 
 - OAuth 2.0 authentication with Twitter
-- PKCE support enabled by default
+- PKCE support enabled by default (can be disabled)
+- State parameter for CSRF protection (optional)
 - Refresh token support via `offline.access` scope
 - Enhanced user profile data including profile images and metrics
 - TypeScript support
-- Automatic state parameter handling
 - Comprehensive test coverage
 
 ## Install
@@ -38,7 +38,9 @@ passport.use(new TwitterStrategy({
       'offline.access', // For refresh tokens
       'email'          // For email access (if granted by user)
     ],
-    // Optional: customize which profile fields to request
+    // Optional configuration
+    state: true,      // Enable CSRF protection (default: true)
+    pkce: true,       // Enable PKCE (default: true)
     profileFields: 'description,entities,id,location,name,pinned_tweet_id,profile_image_url,protected,public_metrics,url,username,verified,verified_type,withheld'
   },
   function(accessToken, refreshToken, profile, cb) {
@@ -60,6 +62,30 @@ passport.use(new TwitterStrategy({
   }
 ));
 ```
+
+#### Security Options
+
+The strategy provides two security features that can be configured:
+
+1. **State Parameter** (CSRF Protection):
+   ```javascript
+   {
+     state: true  // Enable state parameter (default: true)
+     // or
+     state: false // Disable state parameter if you want to handle CSRF protection yourself
+   }
+   ```
+
+2. **PKCE** (Proof Key for Code Exchange):
+   ```javascript
+   {
+     pkce: true   // Enable PKCE (default: true)
+     // or
+     pkce: false  // Disable PKCE if you need to handle it differently
+   }
+   ```
+
+Note: It's recommended to keep both security features enabled unless you have a specific reason to handle them differently.
 
 #### Authentication Routes
 
