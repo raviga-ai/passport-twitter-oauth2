@@ -1,5 +1,7 @@
 # passport-twitter-oauth2
 
+[![npm version](https://img.shields.io/npm/v/passport-twitter-oauth2-ravigaai.svg)](https://www.npmjs.com/package/passport-twitter-oauth2-ravigaai)
+
 [Passport](https://www.passportjs.org/) strategy for authenticating with Twitter using OAuth 2.0 and PKCE, with support for refresh tokens and enhanced profile data.
 
 ## Features

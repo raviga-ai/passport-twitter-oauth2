@@ -1,6 +1,12 @@
-example/
 test/
 .github/
 .gitignore
 .npmignore
-*.tgz 
+*.tgz
+coverage/
+.vscode/
+.idea/
+node_modules/
+npm-debug.log
+yarn-error.log
+.DS_Store
